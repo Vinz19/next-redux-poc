@@ -1,4 +1,4 @@
-export const ADD_TODO = "ADD_USER";
+export const ADD_TODO = "ADD_TODO";
 
 export const addTodo = (newTodo) => {
   return {
