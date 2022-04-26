@@ -23,7 +23,7 @@ export default function Add() {
       <button onClick={addNewRule}>Add</button>
       <h4>Todo List:</h4>
       <ol>
-        {todos && todos.map((todo) => (
+        {todos.map((todo) => (
           <li key={todo}>{todo}</li>
         ))}
       </ol>

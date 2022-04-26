@@ -12,6 +12,7 @@ const combineReducer = combineReducers({
 const mainReducer = (state, action) => {
     if(action.type === HYDRATE) {
         const newState = {
+            ...state,
             counter: {
                 count: state.counter.count + action.payload.counter.count
               },

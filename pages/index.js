@@ -6,8 +6,8 @@ const Index = (props) => {
     return <HomePage title="Index Page" linkTo="/other" />;
 };
 
-export const getStaticProps = wrapper.getStaticProps((store) => () => {
+/*export const getStaticProps = wrapper.getStaticProps((store) => () => {
     store.dispatch(incrementCounter())
-  })
+  })*/
 
 export default Index;

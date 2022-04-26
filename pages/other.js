@@ -7,12 +7,12 @@ const Other = (props) => {
   return <HomePage title="Other Page" linkTo="/" />;
 };
 
-export const getServerSideProps = wrapper.getServerSideProps((store) => async () => {
+export const getServerSideProps = wrapper.getServerSideProps((store) => () => {
   store.dispatch(incrementCounter());
   
   /*const response = await fetch(`https://reqres.in/api/todos/`);
   const {data} = await response.json();
-  store.dispatch(addTodo`{todo}`)*/
-});
+  store.dispatch(addTodo`${data.todo}`)*/
+})
 
 export default Other;

@@ -1,4 +1,4 @@
-import { counterActionTypes } from "./action";
+import { INCREMENT } from "./action";
 
 const counterInitialState = {
   count: 0,
@@ -6,8 +6,8 @@ const counterInitialState = {
 
 export default function reducer(state = counterInitialState, action) {
   switch (action.type) {
-    case counterActionTypes.INCREMENT:
-      return { ...state, count: state.count + 1 };
+    case INCREMENT:
+      return {...state,  count: state.count + 1 };
     default:
       return state;
   }

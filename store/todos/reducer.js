@@ -12,7 +12,7 @@ const todoInitialState = {
 export default function reducer(state = todoInitialState, action) {
   switch (action.type) {
     case ADD_TODO: {
-      return { todos: [...state.todos, action.todo] };
+      return {...state, todos: [...state.todos, action.todo] };
     }
     default:
       return state;
