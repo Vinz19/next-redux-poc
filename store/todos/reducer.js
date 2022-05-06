@@ -1,6 +1,6 @@
 import { ADD_TODO } from "./action";
 
-const todoInitialState = {
+const todosInitialState = {
   todos: ["Prendre Petit Dejeuner", "Prendre une douche"],
 };
 
@@ -9,12 +9,13 @@ const todoInitialState = {
  on décompose les "todos du state" et on y ajoute la "todos" qui se trouve dans l'action
  */
 
-export default function reducer(state = todoInitialState, action) {
-  switch (action.type) {
-    case ADD_TODO: {
-      return {...state, todos: [...state.todos, action.todo] };
-    }
-    default:
-      return state;
-  }
-}
+ 
+ export default function reducer(state = todosInitialState, action) {
+   switch (action.type) {
+     case ADD_TODO: {
+         return { ...state, todos: [...state.todos, action.todos] };
+       }
+     default:
+       return state;
+   }
+ }
